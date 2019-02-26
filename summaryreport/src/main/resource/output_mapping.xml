@@ -1,0 +1,11 @@
+<beanio xmlns="http://www.beanio.org/2012/03" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+	<stream name="output" format="csv" strict="true">
+		<record name="outputRecord" class="com.abnamro.futuretransactions.report.model.TransactionAmountGroupingRecord">
+	      <field name="clientInformation" />
+	      <field name="productInformation" />
+	      <field name="totalTransactionAmount" />
+	    </record>  
+	</stream>
+</beanio>

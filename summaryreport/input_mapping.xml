@@ -1,0 +1,42 @@
+<beanio xmlns="http://www.beanio.org/2012/03" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+  <stream name="clientFile" format="fixedlength">
+    <record name="clientRecord" class="com.abnamro.futuretransactions.report.model.FutureTransactionRecord">
+    	<field name="recordCode" length="3" />
+    	<field name="clientType" length="4" />
+    	<field name="clientNumber" length="4" />
+    	<field name="accountNumber" length="4" />
+    	<field name="subAccountNumber" length="4" />
+    	<field name="oppositePartyCode" length="6" />
+    	<field name="productGroupCode" length="2" />
+    	<field name="exchangeCode" length="4" />
+    	<field name="symbol" length="6" />
+    	<field name="expirationDate" length="8" format="yyyyMMdd"/>
+    	<field name="currencyCode" length="3" />
+    	<field name="movementCode" length="2" />
+    	<field name="buySellCode" length="1" />
+    	<field name="quantityLongSign" length="1" />
+    	<field name="quantityLong" length="10" />
+    	<field name="quantityShortSign" length="1" />
+    	<field name="quantityShort" length="10" />
+    	<field name="exchangeBrokerFeeDec" length="12" />
+    	<field name="exchangeBrokerFeeDC" length="1" />
+    	<field name="exchangeBrokerFeeCurCode" length="3" />
+    	<field name="clearingFeeDec" length="12" />
+    	<field name="clearingFeeDC" length="1" />
+    	<field name="clearingFeeCurCode" length="3" />
+    	<field name="commission" length="12" />
+    	<field name="commissionDC" length="1" />
+    	<field name="commissionCurCode" length="3" />
+    	<field name="transactionDate" length="8" format="yyyyMMdd"/>
+    	<field name="futureReference" length="6" />
+    	<field name="ticketNumber" length="6" />
+    	<field name="externalNumber" length="6" />
+    	<field name="transactionPriceDec" length="15" />
+    	<field name="traderInitials" length="6" />
+    	<field name="oppositeTraderId" length="7" />
+    	<field name="openCloseCode" length="1" />
+    </record>
+  </stream>
+</beanio>
